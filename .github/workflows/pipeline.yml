@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [master]
+    branches: [feat/pnpm]
   pull_request:
-    branches: [master]
+    branches: [feat/pnpm]
 
 env:
   GHR_PROJECT_REPONAME: ui5-language-assistant
@@ -14,8 +14,8 @@ jobs:
     build:
         strategy:
           matrix:
-            os: [ubuntu-latest, windows-latest]
-            node-version: [18.x, 20.x]
+            os: [ubuntu-latest]
+            node-version: [18.x]
         runs-on: ${{ matrix.os }}
         steps:
         - uses: actions/checkout@v4
