@@ -3,7 +3,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build:quick", "compile", "lint", "test"],
+        "cacheableOperations": ["build", "compile", "lint", "test"],
         "accessToken": "",
         "canTrackAnalytics": false,
         "showUsageWarnings": true
@@ -15,7 +15,7 @@
     "prod": ["!{projectRoot}/**/*.test.ts"]
   },
   "targetDefaults": {
-    "build:quick": {
+    "build": {
       "dependsOn": ["^compile"],
       "outputs": ["{projectRoot}/lib"]
     },
