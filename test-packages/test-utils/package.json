@@ -23,8 +23,11 @@
     "proxy-from-env": "1.1.0"
   },
   "devDependencies": {
-    "@types/node-fetch": "2.5.10",
-    "@types/lodash": "4.14.168"
+    "@ui5-language-assistant/semantic-model-types": "workspace:*",
+    "@ui5-language-assistant/logic-utils": "workspace:*",
+    "@ui5-language-assistant/xml-views-completion": "workspace:*",
+    "@ui5-language-assistant/constant": "workspace:*",
+    "@ui5-language-assistant/language-server": "workspace:*"
   },
   "scripts": {
     "ci": "npm-run-all clean compile lint",
